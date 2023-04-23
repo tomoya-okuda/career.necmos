@@ -2,14 +2,14 @@
   /* Color */
   --Black100: #111;
   --Black200: #222;
-  --White000: #FFF;
 
-  --White100: #F2F5F7;
-  --White200: #F5F5F5;
-  --White300: #E3E3E3;
+  --White000: #fff;
+  --White100: #f2f5f7;
+  --White200: #f5f5f5;
+  --White300: #e3e3e3;
 
-  --Primary000: #0075C2;
-  --Secondary000: #E95399;
+  --Primary000: #0075c2;
+  --Secondary000: #e95399;
 }
 
 * {
