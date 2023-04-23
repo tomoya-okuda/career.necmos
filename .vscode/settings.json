@@ -8,5 +8,6 @@
       "addWords": true,
       "scope": "workspace"
     }
-  }
+  },
+  "cSpell.ignoreWords": ["Necmos", "notojp", "webp"]
 }

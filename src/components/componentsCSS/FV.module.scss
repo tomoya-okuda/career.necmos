@@ -1,7 +1,14 @@
 .fv {
+  height: 100dvh;
   color: var(--White000);
-  .texts {
-    margin: 48px auto auto 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -1;
+  .upper {
+    z-index: 1;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 40px 16px;
     h1 {
       font-size: 28px;
       font-weight: 600;
@@ -13,5 +20,16 @@
       font-weight: 600;
       letter-spacing: 0.2em;
     }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+  }
+  .image {
+    width: 100vw;
   }
 }
