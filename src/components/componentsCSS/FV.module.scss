@@ -1,0 +1,17 @@
+.fv {
+  color: var(--White000);
+  .texts {
+    margin: 48px auto auto 24px;
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 130%;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+    }
+  }
+}

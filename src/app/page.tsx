@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from 'next/image';
+import styles from './page.module.scss';
+import FV from '@/components/FV';
 
 export default function Home() {
   return (
     <main>
-      <h1>AAAAA</h1>
+      <FV />
     </main>
-  )
+  );
 }
