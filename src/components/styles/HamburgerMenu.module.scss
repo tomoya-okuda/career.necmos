@@ -37,6 +37,7 @@
 .menu li {
   padding: 16px 0;
   text-align: center;
+  color: var(--White000);
 }
 
 .closeButton {
@@ -48,8 +49,8 @@
   margin: 12px 16px 12px 0;
   text-decoration-line: underline;
   font-family: var(--font--notojp);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
-  color: var(--Black200);
+  color: var(--White000);
   text-align: right;
 }

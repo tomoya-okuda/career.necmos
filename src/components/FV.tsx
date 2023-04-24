@@ -12,12 +12,12 @@ function FV() {
         <p>NECMOS CAREERS</p>
       </div>
       <Button />
-      <Image
+      {/* <Image
         className={styles.image}
         src="/images/fv.webp"
         alt="background image"
         fill
-      />
+      /> */}
     </div>
   );
 }
