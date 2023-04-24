@@ -1,11 +1,16 @@
 import styles from 'src/components/styles/Button.module.scss';
 import Link from 'next/link';
 
-function Button() {
+type Props = {
+  title?: string;
+  link?: any;
+};
+
+function Button(props: Props) {
   return (
     <div>
-      <Link className={styles.button} href='/jobs'>
-        もっと見る
+      <Link className={styles.button} href={props.link}>
+        {props.title}
       </Link>
     </div>
   );

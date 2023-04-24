@@ -7,9 +7,31 @@
   --White100: #f2f5f7;
   --White200: #f5f5f5;
   --White300: #e3e3e3;
+  --White400: #bababa;
 
   --Primary000: #0075c2;
   --Secondary000: #e95399;
+}
+
+/* Font Size */
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 15px;
 }
 
 * {

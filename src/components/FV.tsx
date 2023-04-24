@@ -11,7 +11,7 @@ function FV() {
         </h1>
         <p>NECMOS CAREERS</p>
       </div>
-      <Button />
+      <Button title="もっと見る" link="/jobs" />
       {/* <Image
         className={styles.image}
         src="/images/fv.webp"
