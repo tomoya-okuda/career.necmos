@@ -1,0 +1,55 @@
+.menuButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  text-decoration-line: underline;
+  font-family: var(--font--notojp);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--Black200);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: var(--Primary000);
+  overflow-y: auto;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu.open {
+  transform: translateX(0%);
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 12px 16px 12px 0;
+  text-decoration-line: underline;
+  font-family: var(--font--notojp);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--Black200);
+  text-align: right;
+}

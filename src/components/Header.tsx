@@ -1,6 +1,9 @@
-import styles from 'src/components/componentsCSS/Header.module.scss';
+"use client";
+
+import styles from 'src/components/styles/Header.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import HamburgerMenu from './HamburgerMenu';
 
 function Header() {
   return (
@@ -8,9 +11,10 @@ function Header() {
       <Link href="/" className={styles.menu}>
         <Image src="icons/logo-black.svg" alt="logo" width={32} height={32} />
       </Link>
-      <Link href="/" className={styles.menu}>
+      <HamburgerMenu />
+      {/* <Link href="/" className={styles.menu}>
         Menu
-      </Link>
+      </Link> */}
     </header>
   );
 }

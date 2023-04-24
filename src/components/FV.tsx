@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from 'src/components/componentsCSS/FV.module.scss';
+import styles from 'src/components/styles/FV.module.scss';
 import Button from '@/components/Button';
 
 function FV() {
@@ -11,15 +11,12 @@ function FV() {
         </h1>
         <p>NECMOS CAREERS</p>
       </div>
-      <div className={styles.bottom}>
-        <Button />
-      </div>
+      <Button />
       <Image
         className={styles.image}
         src="/images/fv.webp"
         alt="background image"
-        layout="fill"
-        objectFit="cover"
+        fill
       />
     </div>
   );

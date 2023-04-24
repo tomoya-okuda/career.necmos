@@ -1,10 +1,7 @@
 .fv {
   height: 100dvh;
   color: var(--White000);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: -1;
+  background-color: var(--Black100);
   .upper {
     z-index: 1;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
@@ -21,15 +18,10 @@
       letter-spacing: 0.2em;
     }
   }
-  .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    z-index: 1;
-  }
   .image {
-    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    width: auto !important;
+    z-index: -1;
   }
 }
