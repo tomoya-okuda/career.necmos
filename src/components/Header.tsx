@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import styles from 'src/components/styles/Header.module.scss';
 import Image from 'next/image';
@@ -12,9 +12,6 @@ function Header() {
         <Image src="icons/logo-black.svg" alt="logo" width={32} height={32} />
       </Link>
       <HamburgerMenu />
-      {/* <Link href="/" className={styles.menu}>
-        Menu
-      </Link> */}
     </header>
   );
 }
