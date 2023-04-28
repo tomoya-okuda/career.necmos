@@ -1,6 +1,6 @@
 function page() {
   return (
-    <div>page</div>
+    <div>I am News page</div>
   )
 }
 
