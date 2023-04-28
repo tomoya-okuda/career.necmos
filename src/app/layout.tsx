@@ -23,9 +23,9 @@ export const metadata = {
   },
   description,
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
+    icon: '/public/icons/favicon.ico',
+    shortcut: '/public/icons/favicon.ico',
+    apple: '/public/icons/favicon.ico',
     // ドキュメントを参照して適宜増やすこと
   },
   openGraph: {
