@@ -1,10 +1,39 @@
+.container {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--White300);
+}
+
+.button {
+  color: var(--Black200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 16px 8px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .accordion {
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
 }
 
 .panel {
-  padding: 0 18px;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  padding: 0 8px 8px 8px;
+  transition: max-height 0.3s ease-out;
+  p {
+    color: var(--Black100);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 160%;
+    margin-bottom: 12px;
+  }
 }

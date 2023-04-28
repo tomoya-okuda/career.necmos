@@ -9,5 +9,13 @@
       "scope": "workspace"
     }
   },
-  "cSpell.ignoreWords": ["Necmos", "Wantedly", "microcms", "notojp", "webp"]
+  "cSpell.ignoreWords": [
+    "AOSHIMA",
+    "ASAKUSA",
+    "Necmos",
+    "Wantedly",
+    "microcms",
+    "notojp",
+    "webp"
+  ]
 }
