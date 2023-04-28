@@ -1,5 +1,12 @@
-.h3 {
+.heading {
   text-align: center;
-  color: var(--Black200);
   padding: 32px 0;
+}
+
+.black {
+  color: var(--Black200);
+}
+
+.white {
+  color: var(--White000);
 }
