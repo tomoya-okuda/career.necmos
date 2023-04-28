@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getList } from 'src/libs/microcms';
+import styles from 'src/app/jobs/jobs.module.scss';
 
 export default async function StaticPage() {
   const { contents } = await getList();
