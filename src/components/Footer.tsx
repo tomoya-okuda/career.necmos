@@ -60,6 +60,11 @@ function Footer() {
               よくある質問
             </Link>
             <div className={styles.line}></div>
+            <Link href="/news" className={styles.textLink}>
+              お知らせ
+            </Link>
+          </div>
+          <div className={styles.group}>
             <Link href="/contact" className={styles.textLink}>
               お問い合わせ
             </Link>
