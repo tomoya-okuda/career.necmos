@@ -43,18 +43,23 @@ const HamburgerMenu: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/questions" onClick={toggleMenu}>
-                よくある質問
-              </Link>
-            </li>
-            <li>
               <Link href="/jobs" onClick={toggleMenu}>
                 募集一覧/応募
               </Link>
             </li>
             <li>
+              <Link href="/questions" onClick={toggleMenu}>
+                よくある質問
+              </Link>
+            </li>
+            <li>
               <Link href="/news" onClick={toggleMenu}>
                 お知らせ
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={toggleMenu}>
+                お問い合わせ
               </Link>
             </li>
           </ul>
