@@ -1,7 +1,10 @@
 .container {
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid var(--White300);
+  border-bottom: 0.5px solid var(--White300);
+  &.noBorder {
+    border-bottom: none;
+  }
 }
 
 .button {

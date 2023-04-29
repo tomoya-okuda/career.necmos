@@ -6,7 +6,7 @@ function page() {
   return (
     <div className={styles.questions}>
       <HeadingH3 title="よくある質問" color="black" />
-      <QuestionList title="働き方やカルチャーについて" />
+      <QuestionList />
     </div>
   );
 }

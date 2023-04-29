@@ -7,11 +7,13 @@ import styles from 'src/components/styles/QuestionAccordion.module.scss';
 interface QuestionAccordionProps {
   question: string;
   answer: React.ReactNode;
+  noBorder?: boolean;
 }
 
 const QuestionAccordion: React.FC<QuestionAccordionProps> = ({
   question,
   answer,
+  noBorder = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,8 +21,13 @@ const QuestionAccordion: React.FC<QuestionAccordionProps> = ({
     setIsOpen(!isOpen);
   };
 
+  const containerClasses = [styles.container];
+  if (noBorder) {
+    containerClasses.push(styles.noBorder);
+  }
+
   return (
-    <div className={styles.container}>
+    <div className={containerClasses.join(' ')}>
       <button className={styles.button} onClick={toggleAccordion}>
         {question}
         <ArrowIcon isOpen={isOpen} color="#222222" />
