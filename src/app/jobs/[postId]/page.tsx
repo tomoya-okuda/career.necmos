@@ -30,9 +30,10 @@ export default async function StaticDetailPage({
   }
 
   return (
-    <main>
-      <h1>{post.title}</h1>
-      <div>{parse(post.content)}</div>
+    <main className={styles.main}>
+      <h1 className={styles.title}>{post.title}</h1>
+      <p className={styles.id}>{post.id}</p>
+      <div className={styles.post}>{parse(post.content)}</div>
     </main>
   );
 }
