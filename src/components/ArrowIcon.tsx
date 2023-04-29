@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from 'src/components/styles/ArrowIcon.module.scss';
 
 interface ArrowIconProps {
   isOpen: boolean;
