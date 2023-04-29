@@ -30,7 +30,9 @@ const QuestionAccordion: React.FC<QuestionAccordionProps> = ({
     <div className={containerClasses.join(' ')}>
       <button className={styles.button} onClick={toggleAccordion}>
         {question}
-        <ArrowIcon isOpen={isOpen} color="#222222" />
+        <div className="iconContainer">
+          <ArrowIcon isOpen={isOpen} color="#222222" />
+        </div>
       </button>
       <div
         className={styles.accordion}
