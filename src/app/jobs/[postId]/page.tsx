@@ -35,7 +35,7 @@ export default async function StaticDetailPage({
       <h1 className={styles.title}>{post.title}</h1>
       <p className={styles.id}>{post.id}</p>
       <div className={styles.post}>{parse(post.content)}</div>
-      {/* <Button title="応募する" link="/contact" /> */}
+      <Button title="応募する" link="/contact" />
     </main>
   );
 }
