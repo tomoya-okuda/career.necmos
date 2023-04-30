@@ -16,7 +16,8 @@
 
 /* Font Size */
 h1 {
-  font-size: 28px;
+  font-size: 32px;
+  letter-spacing: 0.1em;
 }
 
 h2 {
@@ -29,6 +30,11 @@ h3 {
 
 h4 {
   font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+  letter-spacing: 0.2em;
 }
 
 p {
