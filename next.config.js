@@ -3,14 +3,6 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-};
-
-const path = require('path');
-
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
   async redirects() {
     return [
       {
@@ -19,6 +11,14 @@ module.exports = {
         permanent: true,
       },
     ];
+  },
+};
+
+const path = require('path');
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
 };
 
