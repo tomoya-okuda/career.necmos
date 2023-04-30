@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '/src/components/styles/WelcomeCard.module.scss';
 
 type CardVariant = 'company' | 'people' | 'culture';
@@ -31,7 +32,9 @@ const WelcomeCard: React.FC<WelcomeCardProps> = ({
       <ul>
         {links.map((link, index) => (
           <li key={index}>
-            <a href={link.url}>{link.text}</a>
+            <Link className={styles.link} href={link.url}>
+              {link.text}
+            </Link>
           </li>
         ))}
       </ul>

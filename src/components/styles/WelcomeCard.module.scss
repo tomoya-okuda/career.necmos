@@ -1,21 +1,12 @@
-.container {
-  background-color: var(--Primary000);
-  color: var(--White000);
-  border-radius: 12px;
-  margin: 0 16px;
-  padding: 24px 24px 148px 24px;
-  .headings {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-bottom: 24px;
-  }
-}
-
 .welcomeCard {
   border-radius: 8px;
   margin: 0 16px;
   padding: 24px 24px 148px 24px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 16px 0 16px 16px;
 }
 
 .company {
