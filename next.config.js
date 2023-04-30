@@ -11,6 +11,15 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  async redirects() {
+    return [
+      {
+        source: '/welcome',
+        destination: '/welcome/company',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
