@@ -1,5 +1,3 @@
-'use client';
-
 import styles from 'src/components/styles/Header.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
