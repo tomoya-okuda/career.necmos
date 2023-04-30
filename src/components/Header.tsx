@@ -1,7 +1,7 @@
 import styles from 'src/components/styles/Header.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import HamburgerMenu from './HamburgerMenu';
+import HamburgerMenu from '@/components/HamburgerMenu';
 
 function Header() {
   return (
