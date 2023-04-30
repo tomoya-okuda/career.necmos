@@ -38,15 +38,15 @@ function Footer() {
         <div className={styles.links}>
           <p>Necmos Inc. ©︎ 2023</p>
           <div className={styles.group}>
-            <Link href="/welcome" className={styles.textLink}>
+            <Link href="/welcome/company" className={styles.textLink}>
               会社を知る
             </Link>
             <div className={styles.line}></div>
-            <Link href="/welcome" className={styles.textLink}>
+            <Link href="/welcome/people" className={styles.textLink}>
               仲間を知る
             </Link>
             <div className={styles.line}></div>
-            <Link href="/welcome" className={styles.textLink}>
+            <Link href="/welcome/culture" className={styles.textLink}>
               文化を知る
             </Link>
           </div>

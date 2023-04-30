@@ -28,17 +28,17 @@ const HamburgerMenu: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/welcome" onClick={toggleMenu}>
+              <Link href="/welcome/company" onClick={toggleMenu}>
                 会社を知る
               </Link>
             </li>
             <li>
-              <Link href="/welcome" onClick={toggleMenu}>
+              <Link href="/welcome/people" onClick={toggleMenu}>
                 仲間を知る
               </Link>
             </li>
             <li>
-              <Link href="/welcome" onClick={toggleMenu}>
+              <Link href="/welcome/culture" onClick={toggleMenu}>
                 文化を知る
               </Link>
             </li>
