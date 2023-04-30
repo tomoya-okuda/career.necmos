@@ -4,9 +4,6 @@ import { getDetail, getList } from 'src/libs/microcms';
 import styles from 'src/app/jobs/post.module.scss';
 import Button from '@/components/Button';
 
-// キャッシュを利用しない
-export const revalidate = 0;
-
 export async function generateStaticParams() {
   const { contents } = await getList();
 
