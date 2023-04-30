@@ -19,7 +19,7 @@ function Button2(props: Props) {
         <div className={styles.text}>{props.title}</div>
         <div className={styles.arrow}>
           <Image
-            src="icons/icon-arrow-rightup.svg"
+            src="/icons/icon-arrow-rightup.svg"
             alt="arrow"
             width={32}
             height={32}

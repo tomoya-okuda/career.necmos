@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from 'src/components/styles/Footer.module.scss';
 import Button2 from './Button2';
@@ -15,19 +14,19 @@ function Footer() {
       </div>
       <div className={styles.middle}>
         <Button2
-          icon="icons/logo-normal.svg"
+          icon="/icons/logo-normal.svg"
           title="Necmos公式HP"
           link="https://www.necmos.jp/"
           target="_blank"
         />
         <Button2
-          icon="icons/logo-wantedly.svg"
+          icon="/icons/logo-wantedly.svg"
           title="Wantedly"
           link="https://www.wantedly.com/companies/necmos"
           target="_blank"
         />
         <Button2
-          icon="icons/icon-mail.svg"
+          icon="/icons/icon-mail.svg"
           title="お問い合わせ"
           link="/contact"
         />
