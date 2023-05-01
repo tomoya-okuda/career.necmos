@@ -1,11 +1,58 @@
 .button {
-  appearance: none;
-  width: 180px;
-  height: 40px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--Primary000);
+  width: 200px;
+  height: 40px;
+}
+
+.fill {
+  border: none;
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid;
+}
+
+.primary {
   color: var(--White000);
+}
+
+.secondary {
+  color: #e95399;
+}
+
+.tertiary {
+  color: #ffffff;
+}
+
+.fill.primary {
+  background-color: #0075c2;
+}
+
+.fill.secondary {
+  background-color: #e95399;
+}
+
+.fill.tertiary {
+  background-color: #ffffff;
+}
+
+.outline.primary {
+  border-color: #0075c2;
+}
+
+.outline.secondary {
+  border-color: #e95399;
+}
+
+.outline.tertiary {
+  border-color: #ffffff;
 }

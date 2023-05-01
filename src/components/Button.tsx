@@ -1,19 +1,28 @@
-import styles from 'src/components/styles/Button.module.scss';
 import Link from 'next/link';
+import styles from 'src/components/styles/Button.module.scss';
 
-type Props = {
-  title?: string;
-  link?: any;
+type ButtonProps = {
+  text: string;
+  link?: string;
+  variant?: 'fill' | 'outline';
+  color?: 'primary' | 'secondary' | 'tertiary';
 };
 
-function Button(props: Props) {
-  return (
-    <div>
-      <Link className={styles.button} href={props.link}>
-        {props.title}
-      </Link>
-    </div>
-  );
-}
+const Button: React.FC<ButtonProps> = ({
+  text,
+  link,
+  variant = 'fill',
+  color = 'primary',
+}) => {
+  const buttonClass = `${styles.button} ${styles[variant]} ${styles[color]}`;
+
+  const content = <button className={buttonClass}>{text}</button>;
+
+  if (link) {
+    return <Link href={link}>{content}</Link>;
+  }
+
+  return content;
+};
 
 export default Button;
