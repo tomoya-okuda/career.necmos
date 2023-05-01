@@ -2,6 +2,8 @@ import Header from '@/components/Header';
 import './globals.css';
 import { Noto_Sans_JP } from 'next/font/google';
 import Footer from '@/components/Footer';
+import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
 
 const notojp = Noto_Sans_JP({
   subsets: ['latin'],
