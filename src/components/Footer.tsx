@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from 'src/components/styles/Footer.module.scss';
 import Button2 from './Button2';
+import Button from './Button';
 
 function Footer() {
   return (
@@ -8,9 +9,12 @@ function Footer() {
       <div className={styles.upper}>
         <p>キャリア採用</p>
         <h2>Join Us!</h2>
-        <Link href="/jobs" className={styles.button}>
-          募集一覧 / 応募
-        </Link>
+        <Button
+          text="募集一覧 / 応募"
+          link="/jobs"
+          color="tertiary"
+          variant="outline"
+        />
       </div>
       <div className={styles.middle}>
         <Button2
@@ -32,9 +36,12 @@ function Footer() {
         />
       </div>
       <div className={styles.bottom}>
-        <Link href="/" className={styles.button3}>
-          Necmos トップへ
-        </Link>
+        <Button
+          text="Necmos トップへ"
+          link="/"
+          variant="outline"
+          color="primary"
+        />
         <div className={styles.links}>
           <p>Necmos Inc. ©︎ 2023</p>
           <div className={styles.group}>

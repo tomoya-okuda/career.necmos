@@ -12,10 +12,10 @@ function FV() {
         <p>NECMOS CAREERS</p>
       </div>
       <Button
-        link="/example"
+        link="/welcome"
         color="primary"
         variant="fill"
-        text="Primary Fill"
+        text="もっと見る"
       />
       {/* <Image
         className={styles.image}
