@@ -17,9 +17,15 @@ const Page: React.FC = () => {
     <div>
       <h2>Component List</h2>
 
-      {/* Button [props: text, link?, variant?, color?] */}
+      {/* Button [props: text, link?, variant?, color?, external?] */}
       <div className={styles.button}>
-        <Button text="Primary Fill" link="/" variant="fill" color="primary" />
+        <Button
+          text="Primary Fill"
+          link="/"
+          variant="fill"
+          color="primary"
+          external
+        />
         <Button
           text="Primary Outline"
           link="/"
