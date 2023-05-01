@@ -17,43 +17,33 @@ const Page: React.FC = () => {
     <div>
       <h2>Component List</h2>
 
-      {/* Button [props: link, color, variant, text] */}
+      {/* Button [props: text, link?, variant?, color?] */}
       <div className={styles.button}>
+        <Button text="Primary Fill" link="/" variant="fill" color="primary" />
         <Button
-          link="/"
-          color="primary"
-          variant="fill"
-          text="Primary Fill"
-        />
-        <Button
-          link="/"
-          color="primary"
-          variant="outline"
           text="Primary Outline"
+          link="/"
+          variant="outline"
+          color="primary"
         />
         <Button
-          link="/"
-          color="secondary"
-          variant="fill"
           text="Secondary Fill"
-        />
-        <Button
           link="/"
-          color="secondary"
-          variant="outline"
-          text="Secondary Outline"
-        />
-        <Button
-          link="/"
-          color="tertiary"
           variant="fill"
-          text="Tertiary Fill"
+          color="secondary"
         />
         <Button
+          text="Secondary Outline"
+          link="/"
+          variant="outline"
+          color="secondary"
+        />
+        <Button text="Tertiary Fill" link="/" variant="fill" color="tertiary" />
+        <Button
+          text="Tertiary Outline"
           link="/"
           color="tertiary"
           variant="outline"
-          text="Tertiary Outline"
         />
       </div>
     </div>
@@ -61,53 +51,3 @@ const Page: React.FC = () => {
 };
 
 export default Page;
-
-// function page() {
-//   return (
-//     <div>
-//       <h2>Component List</h2>
-
-//       {/* Button [props: link, color, variant, text] */}
-//       <div className={styles.button}>
-//         <Button
-//           link="/example"
-//           color="primary"
-//           variant="fill"
-//           text="Primary Fill"
-//         />
-//         <Button
-//           link="/example"
-//           color="primary"
-//           variant="outline"
-//           text="Primary Outline"
-//         />
-//         <Button
-//           link="/example"
-//           color="secondary"
-//           variant="fill"
-//           text="Secondary Fill"
-//         />
-//         <Button
-//           link="/example"
-//           color="secondary"
-//           variant="outline"
-//           text="Secondary Outline"
-//         />
-//         <Button
-//           link="/example"
-//           color="tertiary"
-//           variant="fill"
-//           text="Tertiary Fill"
-//         />
-//         <Button
-//           link="/example"
-//           color="tertiary"
-//           variant="outline"
-//           text="Tertiary Outline"
-//         />
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default page;

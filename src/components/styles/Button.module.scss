@@ -13,46 +13,49 @@
 }
 
 .fill {
-  border: none;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .outline {
-  background-color: transparent;
-  border: 2px solid;
+  border-style: solid;
+  border-width: 1px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .primary {
+  background-color: #0075c2;
   color: var(--White000);
+
+  &.outline {
+    background-color: transparent;
+    border-color: #0075c2;
+    color: var(--White000);
+  }
 }
 
 .secondary {
-  color: #e95399;
+  background-color: var(--Secondary000);
+  color: var(--White000);
+
+  &.outline {
+    background-color: transparent;
+    border-color: var(--Secondary000);
+    color: var(--White000);
+  }
 }
 
 .tertiary {
-  color: #ffffff;
-}
+  background-color: var(--White000);
+  color: #0075c2;
 
-.fill.primary {
-  background-color: #0075c2;
-}
-
-.fill.secondary {
-  background-color: #e95399;
-}
-
-.fill.tertiary {
-  background-color: #ffffff;
-}
-
-.outline.primary {
-  border-color: #0075c2;
-}
-
-.outline.secondary {
-  border-color: #e95399;
-}
-
-.outline.tertiary {
-  border-color: #ffffff;
+  &.outline {
+    background-color: transparent;
+    border-color: var(--White000);
+    color: var(--White000);
+  }
 }

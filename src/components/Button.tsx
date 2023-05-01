@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from 'src/components/styles/Button.module.scss';
+import { motion } from 'framer-motion';
 
 type ButtonProps = {
   text: string;
@@ -16,11 +17,11 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const buttonClass = `${styles.button} ${styles[variant]} ${styles[color]}`;
 
-  const content = <button className={buttonClass}>{text}</button>;
-
-  if (link) {
-    return <Link href={link}>{content}</Link>;
-  }
+  const content = (
+    <Link className={buttonClass} href={link || '#'}>
+      {text}
+    </Link>
+  );
 
   return content;
 };

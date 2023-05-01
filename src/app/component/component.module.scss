@@ -1,8 +1,8 @@
 .button {
   background-color: var(--Black200);
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 12px;
   padding: 16px;
-  margin: 0 auto;
 }
