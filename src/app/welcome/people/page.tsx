@@ -11,9 +11,17 @@ function page() {
         headerText="02"
         subheaderText="仲間を知る"
         links={[
-          { url: '/welcome/people/2-1', text: '2-1  代表あいさつ' },
-          { url: '/welcome/people/2-2', text: '2-2  役員紹介' },
-          { url: '/welcome/people/2-3', text: '2-3  社員インタビュー' },
+          {
+            url: '/welcome/people/2-1',
+            number: '2-1',
+            text: '代表あいさつ',
+          },
+          { url: '/welcome/people/2-2', number: '2-2', text: '役員紹介' },
+          {
+            url: '/welcome/people/2-3',
+            number: '2-3',
+            text: '社員インタビュー',
+          },
         ]}
       />
     </main>

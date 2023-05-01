@@ -4,22 +4,65 @@
   padding: 24px 24px 148px 24px;
 }
 
-.link {
-  text-decoration: none;
-  padding: 16px 0 16px 16px;
+.header {
+  margin-bottom: 2px;
+}
+
+.subheader {
+  margin-bottom: 24px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  .link {
+    padding: 16px 0 16px 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .number {
+    padding-right: 16px;
+    color: var(--White400);
+    min-width: 38px;
+  }
+  .arrow {
+    font-weight: 700;
+    text-align: right;
+    margin-left: auto;
+  }
 }
 
 .company {
   background-color: var(--Primary000);
   color: var(--White000);
+  text-decoration: none;
+  .linkContainer {
+    border-top: 0.5px solid rgba($color: #fff, $alpha: 0.2);
+    .link {
+      border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
+    }
+  }
 }
 
 .people {
   background-color: var(--Secondary000);
   color: var(--White000);
+  .linkContainer {
+    border-top: 0.5px solid rgba($color: #fff, $alpha: 0.2);
+    .link {
+      border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
+    }
+  }
 }
 
 .culture {
   background-color: var(--White000);
   color: var(--Black100);
+  .linkContainer {
+    border-top: 0.5px solid rgba($color: #111, $alpha: 0.2);
+    .link {
+      border-bottom: 0.5px solid rgba($color: #111, $alpha: 0.2);
+    }
+  }
 }

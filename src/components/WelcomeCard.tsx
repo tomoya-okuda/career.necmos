@@ -5,6 +5,7 @@ type CardVariant = 'company' | 'people' | 'culture';
 interface Link {
   url: string;
   text: string;
+  number: string;
 }
 
 interface WelcomeCardProps {
@@ -26,18 +27,18 @@ const WelcomeCard: React.FC<WelcomeCardProps> = ({
 
   return (
     <div className={cardClass}>
-      <h2>{headerText}</h2>
-      <h5>{subheaderText}</h5>
+      <h2 className={styles.header}>{headerText}</h2>
+      <h5 className={styles.subheader}>{subheaderText}</h5>
       {children}
-      <ul>
+      <div className={styles.linkContainer}>
         {links.map((link, index) => (
-          <li key={index}>
-            <Link className={styles.link} href={link.url}>
-              {link.text}
-            </Link>
-          </li>
+          <Link key={index} className={styles.link} href={link.url}>
+            <p className={styles.number}>{link.number}</p>
+            {link.text}
+            <p className={styles.arrow}>&rarr;</p>
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
