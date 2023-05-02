@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  background-color: transparent;
+  background-color: var(--White000);
   border: none;
   outline: none;
   text-align: left;
@@ -36,6 +36,7 @@
 .panel {
   padding: 0 8px 8px 8px;
   transition: max-height 0.3s ease-out;
+  background-color: var(--White000);
   p {
     color: var(--Black300);
     font-size: 13px;
