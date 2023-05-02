@@ -36,7 +36,7 @@ export default async function StaticDetailPage({
         text="← 募集一覧に戻る"
         link="/jobs"
         color="primary"
-        variant="outline"
+        variant="fill"
       />
     </main>
   );
