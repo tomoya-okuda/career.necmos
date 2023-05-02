@@ -22,7 +22,6 @@
   }
   .number {
     padding-right: 16px;
-    color: var(--White400);
     min-width: 38px;
   }
   .arrow {
@@ -40,6 +39,9 @@
     border-top: 0.5px solid rgba($color: #fff, $alpha: 0.2);
     .link {
       border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
+    }
+    .number {
+      color: var(--White300);
     }
   }
 }
