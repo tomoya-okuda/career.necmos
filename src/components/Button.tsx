@@ -7,6 +7,7 @@ type ButtonProps = {
   variant?: 'fill' | 'outline';
   color?: 'primary' | 'secondary' | 'tertiary';
   external?: boolean;
+  width?: number | string;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,6 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'fill',
   color = 'primary',
   external = false,
+  width = 200,
 }) => {
   const buttonClass = `${styles.button} ${styles[variant]} ${styles[color]}`;
 
@@ -28,7 +30,11 @@ const Button: React.FC<ButtonProps> = ({
       {text}
     </Link>
   ) : (
-    <Link className={buttonClass} href={link || '#'}>
+    <Link
+      className={buttonClass}
+      href={link || '#'}
+      style={{ width: typeof width === 'number' ? `${width}px` : width }}
+    >
       {text}
     </Link>
   );

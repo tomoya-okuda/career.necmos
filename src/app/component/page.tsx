@@ -19,7 +19,7 @@ const Page: React.FC = () => {
     <div className={styles.container}>
       <h2>Component List</h2>
 
-      {/* Button [props: text, link?, variant?, color?, external?] */}
+      {/* Button [props: text, link?, variant?, color?, external? width?(default:200px)] */}
       <div className={styles.Button}>
         <h3># Button</h3>
         <Button
