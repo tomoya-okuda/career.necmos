@@ -41,7 +41,7 @@
       border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
     }
     .number {
-      color: var(--White300);
+      color: var(--Primary100);
     }
   }
 }
@@ -54,6 +54,9 @@
     .link {
       border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
     }
+    .number {
+      color: var(--Secondary100);
+    }
   }
 }
 
@@ -64,6 +67,9 @@
     border-top: 0.5px solid rgba($color: #111, $alpha: 0.2);
     .link {
       border-bottom: 0.5px solid rgba($color: #111, $alpha: 0.2);
+    }
+    .number {
+      color: var(--White400);
     }
   }
 }
