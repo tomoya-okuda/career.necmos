@@ -1,3 +1,4 @@
+import Button from '@/components/Button';
 import HeadingH3 from '@/components/HeadingH3';
 import WelcomeCard from '@/components/WelcomeCard';
 import styles from 'src/app/welcome/welcome.module.scss';
@@ -20,6 +21,14 @@ function page() {
           { url: '/welcome/company/1-3', number: '1-3', text: '事業を知る' },
         ]}
       />
+      <div className={styles.buttonContainer}>
+        <Button
+          text="02 仲間を知る"
+          link="/welcome/people"
+          variant="fill"
+          color="secondary"
+        />
+      </div>
     </main>
   );
 }
