@@ -11,12 +11,15 @@ function FV() {
         </h1>
         <p>NECMOS CAREERS</p>
       </div>
-      <Button
-        link="/welcome"
-        color="primary"
-        variant="fill"
-        text="もっと見る"
-      />
+      <div className={styles.buttonContainer}>
+        <Button
+          link="/welcome"
+          color="primary"
+          variant="fill"
+          text="もっと見る"
+        />
+      </div>
+
       {/* <Image
         className={styles.image}
         src="/images/fv.webp"

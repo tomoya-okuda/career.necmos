@@ -2,10 +2,13 @@
   height: 100dvh;
   color: var(--White000);
   background-color: var(--Black100);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .upper {
     z-index: 1;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    padding: 40px 16px;
+    padding: 40px 16px 0;
     h1 {
       line-height: 130%;
       margin-bottom: 8px;
@@ -15,6 +18,10 @@
       font-weight: 600;
       letter-spacing: 0.2em;
     }
+  }
+  .buttonContainer {
+    text-align: center;
+    padding-bottom: 80px;
   }
   .image {
     object-fit: cover;
