@@ -2,10 +2,12 @@ import Link from 'next/link';
 import styles from 'src/components/styles/Footer.module.scss';
 import Button2 from './Button2';
 import Button from './Button';
+import Breadcrumb from './Breadcrumb';
 
 function Footer() {
   return (
     <div className={styles.footer}>
+      <Breadcrumb />
       <div className={styles.upper}>
         <p>キャリア採用</p>
         <h2>Join Us!</h2>
