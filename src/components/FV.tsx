@@ -19,13 +19,12 @@ function FV() {
           text="もっと見る"
         />
       </div>
-
-      {/* <Image
+      <Image
         className={styles.image}
         src="/images/fv.webp"
         alt="background image"
         fill
-      /> */}
+      />
     </div>
   );
 }
