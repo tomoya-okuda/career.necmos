@@ -19,7 +19,7 @@ function FV() {
           text="もっと見る"
         />
       </div>
-      <div className={styles.imgContainer}>
+      {/* <div className={styles.imgContainer}>
         <Image
           className={styles.img}
           src="/images/fv.webp"
@@ -35,7 +35,7 @@ function FV() {
             height: 'auto',
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
