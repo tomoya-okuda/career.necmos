@@ -19,12 +19,23 @@ function FV() {
           text="もっと見る"
         />
       </div>
-      <Image
-        className={styles.image}
-        src="/images/fv.webp"
-        alt="background image"
-        fill
-      />
+      <div className={styles.imgContainer}>
+        <Image
+          className={styles.img}
+          src="/images/fv.webp"
+          alt="background image"
+          width={776}
+          height={766}
+          sizes="100vw"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '200%',
+            height: 'auto',
+          }}
+        />
+      </div>
     </div>
   );
 }
