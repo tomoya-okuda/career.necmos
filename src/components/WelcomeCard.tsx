@@ -27,8 +27,8 @@ const WelcomeCard: React.FC<WelcomeCardProps> = ({
 
   return (
     <div className={cardClass}>
-      <h2 className={styles.header}>{headerText}</h2>
-      <h5 className={styles.subheader}>{subheaderText}</h5>
+      <p className={styles.header}>{headerText}</p>
+      <p className={styles.subheader}>{subheaderText}</p>
       {children}
       <div className={styles.linkContainer}>
         {links.map((link, index) => (

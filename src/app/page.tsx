@@ -11,7 +11,7 @@ export default function Home() {
       <FV />
       <div className={styles.mission}>
         <div className={styles.textContainer}>
-          <h3>自分らしさが誰かのためになる世界を実現する</h3>
+          <p className={styles.heading}>自分らしさが誰かのためになる世界を実現する</p>
           <p>
             NECMOSは、上記をミッションに掲げ「一人一人」のキャリアをもっと自由にしていく会社です。1人のワクワクが100人のワクワクになる。それを皆で楽しめる。そんな仲間を募集しています。
           </p>
@@ -28,7 +28,7 @@ export default function Home() {
         <div className={styles.blackLayer}></div>
       </div>
       <div className={styles.welcome}>
-        <h3>ようこそ、Necmosへ。</h3>
+        <h2>ようこそ、Necmosへ。</h2>
         <div className={styles.WelcomeCardContainer}>
           <WelcomeCard
             variant="company"
@@ -102,7 +102,7 @@ export default function Home() {
       </div>
       <div className={styles.questions}>
         <h2>Questions</h2>
-        <h5>よくある質問</h5>
+        <p>よくある質問</p>
         <QuestionList />
       </div>
     </main>

@@ -5,10 +5,14 @@
 
 .header {
   margin-bottom: 2px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .subheader {
   margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .linkContainer {
@@ -41,7 +45,7 @@
       border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
     }
     .number {
-      color: var(--Primary100);
+      color: var(--White000);
     }
   }
 }
@@ -55,7 +59,7 @@
       border-bottom: 0.5px solid rgba($color: #fff, $alpha: 0.2);
     }
     .number {
-      color: var(--Secondary100);
+      color: var(--White000);
     }
   }
 }
@@ -69,7 +73,7 @@
       border-bottom: 0.5px solid rgba($color: #111, $alpha: 0.2);
     }
     .number {
-      color: var(--White400);
+      color: var(--Black100);
     }
   }
 }
