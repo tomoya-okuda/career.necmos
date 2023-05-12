@@ -33,7 +33,7 @@ function Footer() {
         />
         <Button2
           icon="/icons/icon-mail.svg"
-          title="お問い合わせ"
+          title="エントリーはこちら"
           link="/contact"
         />
       </div>
