@@ -4,6 +4,7 @@ import FV from '@/components/FV';
 import WelcomeCard from '@/components/WelcomeCard';
 import Button from '@/components/Button';
 import QuestionList from '@/components/QuestionList';
+import Card from '@/components/Card';
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       <FV />
       <div className={styles.mission}>
         <div className={styles.textContainer}>
-          <p className={styles.heading}>自分らしさが誰かのためになる世界を実現する</p>
+          <p className={styles.heading}>
+            自分らしさが誰かのためになる世界を実現する
+          </p>
           <p>
             NECMOSは、上記をミッションに掲げ「一人一人」のキャリアをもっと自由にしていく会社です。1人のワクワクが100人のワクワクになる。それを皆で楽しめる。そんな仲間を募集しています。
           </p>
@@ -99,6 +102,15 @@ export default function Home() {
           variant="fill"
           color="primary"
         />
+      </div>
+
+      <div className={styles.careers}>
+        <h2>Careers</h2>
+        <p>募集中の職種</p>
+        <div className={styles.CardContainer}>
+          <Card />
+        </div>
+        <Button text="職種を見る" link="/jobs" variant="fill" color="primary" />
       </div>
       <div className={styles.questions}>
         <h2>Questions</h2>
