@@ -1,6 +1,5 @@
-import React from 'react';
 interface ArrowIconProps {
-  isOpen: boolean;
+  isOpen?: boolean;
   color?: string;
 }
 

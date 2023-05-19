@@ -5,6 +5,7 @@ import WelcomeCard from '@/components/WelcomeCard';
 import Button from '@/components/Button';
 import QuestionList from '@/components/QuestionList';
 import Card from '@/components/Card';
+import H2H3 from '@/components/H2H3';
 
 export default function Home() {
   return (
@@ -105,16 +106,38 @@ export default function Home() {
       </div>
 
       <div className={styles.careers}>
-        <h2>Careers</h2>
-        <p>募集中の職種</p>
-        <div className={styles.CardContainer}>
-          <Card />
+      <H2H3 h2="Careers" h3="募集中の職種" />
+        <div className={styles.cardContainer}>
+          <Card
+            variant="engineer"
+            link="/jobs/engineer"
+            title="Engineer"
+            text="バックエンド、フロントエンド、iOS/Android、セキュリティ、インフラ系など多種多様なポジションを募集しています。"
+          />
+          <Card
+            variant="designer"
+            link="/jobs/designer"
+            title="designer"
+            text="企画からサービス設計などの上流工程から、UIやクリエイティブの作成など、幅広くデザインに携わりたい方を募集しています。"
+          />
+          <Card
+            variant="career-adviser"
+            link="/jobs/career-adviser"
+            title="Career Adviser"
+            text="全社員のキャリアに向き合い、それぞれが実現したい未来に寄り添うお仕事です。キャリアを重要視しているNecmosに欠かせない人材です。"
+          />
         </div>
-        <Button text="職種を見る" link="/jobs" variant="fill" color="primary" />
+        <div className={styles.buttonContainer}>
+          <Button
+            text="職種を見る"
+            link="/jobs"
+            variant="fill"
+            color="primary"
+          />
+        </div>
       </div>
       <div className={styles.questions}>
-        <h2>Questions</h2>
-        <p>よくある質問</p>
+        <H2H3 h2="Questions" h3="よくある質問" />
         <QuestionList />
       </div>
     </main>

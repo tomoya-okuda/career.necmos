@@ -1,16 +1,27 @@
-import styles from 'src/components/styles/Card.module.scss'
+import Link from 'next/link';
+import styles from 'src/components/styles/Card.module.scss';
+import ArrowIcon from './ArrowIcon';
 
-// type CardProps = {
-//   heading: string;
-//   text: string;
-//   img: any;
-//   link: string;
-// }
+type CardProps = {
+  variant: 'engineer' | 'designer' | 'career-adviser';
+  link: any;
+  title: string;
+  text: string;
+};
 
-function Card() {
+const Card: React.FC<CardProps> = ({ variant, link, title, text }) => {
+  const cardStyles = `${styles.card} ${styles[variant]}`;
   return (
-    <div>Card</div>
-  )
-}
+    <>
+      <Link href={link} className={cardStyles}>
+        <div className={styles.textContainer}>
+          <h3>{title}</h3>
+          <p>{text}</p>
+        </div>
+        <p className={styles.arrowCircle}>&rarr;</p>
+      </Link>
+    </>
+  );
+};
 
-export default Card
+export default Card;

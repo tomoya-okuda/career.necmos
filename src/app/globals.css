@@ -13,7 +13,7 @@
   --Primary000: #0075c2;
   --Primary100: #91c4ef;
   --Secondary000: #e95399;
-  --Secondary100: #F8BAD7;
+  --Secondary100: #f8bad7;
 }
 
 /* Font Size */
@@ -41,6 +41,7 @@ h5 {
 
 p {
   font-size: 15px;
+  line-height: 160%;
 }
 
 * {
