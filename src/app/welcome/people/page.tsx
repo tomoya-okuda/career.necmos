@@ -27,7 +27,7 @@ function page() {
       />
       <div className={styles.buttonContainer}>
         <Button
-          text="01"
+          text="←"
           link="/welcome/company"
           variant="outline"
           color="primary"

@@ -23,6 +23,13 @@ function page() {
       />
       <div className={styles.buttonContainer}>
         <Button
+          text="←"
+          link="/welcome/culture"
+          variant="outline"
+          color="tertiary"
+          width={44}
+        />
+        <Button
           text="02 仲間を知る"
           link="/welcome/people"
           variant="fill"

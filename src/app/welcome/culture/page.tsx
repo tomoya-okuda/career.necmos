@@ -31,7 +31,7 @@ function page() {
       />
       <div className={styles.buttonContainer}>
         <Button
-          text="02"
+          text="←"
           link="/welcome/people"
           variant="outline"
           color="secondary"
